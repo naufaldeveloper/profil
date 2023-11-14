@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('foto_profil.jpg') center/cover fixed;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(5px);
+        }
+
+        nav {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            z-index: 1;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav a:not(:last-child)::after {
+            content: " |";
+            margin-left: 5px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for the section */
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%; /* Adjust width as needed */
+            margin-top: 20px; /* Add margin to separate from the image */
+        }
+
+        section img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        /* Added styles for two-column layout */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Adjust width and margin as needed */
+       /* Updated styles for table with nature-inspired colors */
+/* Updated styles for table with nature-inspired colors and black text */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    color: black; /* Warna teks hitam */
+}
+
+th {
+    background-color: #4CAF50; /* Warna hijau terinspirasi alam */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F5F5F5; /* Warna abu-abu muda terinspirasi alam */
+}
+
+tr:nth-child(odd) {
+    background-color: #FFE0B2; /* Warna oranye muda terinspirasi alam */
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Background image -->
+    <img class="background" src='background.jpg' alt="Background">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="download_cv.html">Download CV</a>
+        <a href="contact.html">Contact</a>
+        <a href="about_me.html">About Me</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <img src="foto_profil.jpg" alt="My Photo">
+            <h1>Naufal Habibi</h1>
+            <h4>Software and Hardware Engineer</h4>
+            <p>Overview</p>
+
+            <!-- Skill Table on the left -->
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>Menguasai bahasa pemrograman Arduino, PHP, Java, dan C++</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>Menguasai Ilmu Elektronika</td>
+                    <td>Expert</td>
+                </tr>
+            </table>
+
+            <!-- Experience Table on the right -->
+            <table>
+                <tr>
+                    <th>Pengalaman</th>
+                    <th>Durasi</th>
+                </tr>
+                <tr>
+                    <td>Membuat website absensi menggunakan bahasa PHP</td>
+                    <td>1 tahun</td>
+                </tr>
+                <tr>
+                    <td>Membuat system IoT Smart Home System</td>
+                    <td>2 tahun</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2020 @ Naufal Habibi</p>
+    </footer>
+</body>
+</html>
